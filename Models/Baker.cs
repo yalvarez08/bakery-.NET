@@ -7,5 +7,12 @@ namespace DotnetBakery.Models
 {
     public class Baker 
     {
+        //id is special
+        public int id {get;set;}
+
+        [Required]
+        public string name {get;set;}
+
+        public int yearsOfService {get;set;}
     }
 }

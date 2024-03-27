@@ -13,7 +13,22 @@ namespace DotnetBakery.Controllers
     {
         private readonly ApplicationContext _context;
         public BakersController(ApplicationContext context) {
-            _context = context;
+            _context = context;  //_context is like pool
+        }
+
+        //the name of the method (GetAll) does not matter, can be named whatever
+        [HttpGet]
+        public IEnumerable<Baker> GetAll() {
+            return _context.Bakers;
+        }
+
+    
+        [HttpPost]
+        public IActionResult Post(Baker bakerToAdd) {
+            _context.Add(bakerToAdd);
+            _context.SaveChanges();
+
+            return CreatedAtAction(nameof(GetAll), new {id = bakerToAdd.id}, bakerToAdd);
         }
     }
 }
