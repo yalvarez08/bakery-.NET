@@ -1,5 +1,4 @@
-# dotnet-bakery
+# Bakery Inventory App
 
-This is the starting point for teaching an intro to .NET Core WebAPI project. The models and controllers are stubbed out but empty.
+This bakery inventory is a CRUD app built using .NET Core framework and C#. 
 
-![](https://cdn-blog.adafruit.com/uploads/2010/11/gingerbread03.jpg)
