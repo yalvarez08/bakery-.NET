@@ -1,4 +1,6 @@
-# Bakery Inventory App
+# Bakery Inventory
 
-This bakery inventory is a CRUD app built using .NET Core framework and C#. 
+## Description
+
+This bakery inventory is a CRUD app built using .NET Core framework and C#. Through REST APIs, inventory items can be created, updated, and deleted on the app UI. 
 
